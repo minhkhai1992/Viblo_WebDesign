@@ -103,11 +103,15 @@ header ul li a:last-child {
   font-size: 15px;
   line-height: 27px;
   font-weight: bold;
-  font-family: "Work Sans", sans-serif;
+  font-family: "Myriad Pro", sans-serif;
   color: white;
   margin: 0px auto;
   margin-top: 15px;
   font-weight: normal;
+}
+
+#introduction #actions {
+  padding-top: 20px;
 }
 
 #introduction #actions a {
@@ -565,4 +569,270 @@ footer .contact p {
 footer .contact .contact-social > a {
   display: inline-block;
   padding: 35px 30px;
+}
+
+/* ----------------Responsive -------------------*/
+/** From 960 to 1200*/
+@media screen and (max-width: 1200px) {
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  /* ----Feature----- */
+  #feature .container {
+    display: flex;
+  }
+
+  #feature-list {
+    padding-top: 250px;
+  }
+  #feature-list > div {
+    position: static;
+    width: 100%;
+    height: auto;
+    padding: 20px 30px 20px 30px;
+  }
+
+  #smartphoneimg {
+    width: 50%;
+  }
+
+  #feature-list {
+    width: 50%;
+    padding-top: 250px;
+  }
+
+  #feature-list div img {
+    float: left;
+  }
+
+  #feature-list div h3 {
+    margin-top: 0px;
+    text-align: left;
+    margin-left: 70px;
+  }
+
+  #feature-list div p {
+    margin-left: 70px;
+    text-align: left;
+  }
+
+  #stable {
+    display: flex;
+    padding-right: 30px;
+  }
+
+  #stable > div > * {
+    margin-right: 30px;
+  }
+
+  #stable > ul > li {
+    margin-left: 30px;
+  }
+
+  #stable > div > h2 {
+    margin-top: 15px;
+    text-align: right;
+    margin-right: 30px;
+  }
+}
+
+/** From 768 to 960*/
+@media screen and (max-width: 960px) {
+  header ul li a {
+    font-size: 22px;
+    padding: 0px 40px;
+  }
+
+  #introduction h1 {
+    font-size: 40px;
+    margin-top: 80px;
+  }
+
+  #introduction h2 {
+    font-size: 20px;
+  }
+
+  #introduction #actions a {
+    height: 50px;
+    line-height: 50px;
+    padding: 0px 50px;
+    font-size: 16px;
+  }
+
+  #feature-list {
+    padding-top: 70px;
+  }
+
+  #feature {
+    height: auto;
+    padding-bottom: 100px;
+  }
+
+  #feature #smartphoneimg > img {
+    display: block;
+    margin: 100px auto;
+    max-width: 90%;
+  }
+
+  #feature-list div h3 {
+    font-size: 20px;
+    margin-bottom: 0px;
+  }
+}
+
+/** From 500 to 768 */
+@media screen and (max-width: 768px) {
+  #introduction {
+    height: 800px;
+    background-size: 100%, 180px auto, cover;
+  }
+
+  #introduction h1 {
+    width: auto;
+    font-size: 34px;
+    line-height: 45px;
+  }
+
+  #introduction h2 {
+    width: auto;
+  }
+  #codeID > img {
+    max-width: 100%;
+  }
+
+  /*  Feature Phone image*/
+
+  #feature #smartphoneimg {
+    display: none;
+  }
+  #feature-list {
+    width: 100%;
+  }
+
+  /* Stable*/
+
+  #stable {
+    display: block;
+    height: auto;
+  }
+
+  #stable > div {
+    width: auto;
+  }
+
+  #stable > div > h2 {
+    text-align: center;
+  }
+  #stable > div > p {
+    text-align: center;
+  }
+
+  #stable > div > div {
+    text-align: center;
+  }
+
+  #stable ul {
+    width: auto;
+    margin-top: 50px;
+  }
+
+  #stable > ul > li {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  #available #availableSM > img {
+    display: none;
+  }
+
+  #availableContent div {
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+
+  #availableContent > div > h2 {
+    text-align: center;
+  }
+  #availableContent > div > p {
+    text-align: center;
+  }
+  .appStore {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  #links #link-Contents {
+    margin-right: 37px;
+  }
+  #get-in-touch #button-touch {
+    width: 440px;
+    margin-right: 0px;
+  }
+  #get-in-touch #submit-touch {
+    margin-top: 11px;
+    margin-bottom: 19px;
+  }
+}
+
+/** From below 500px*/
+@media screen and (max-width: 500px) {
+  #introduction {
+    padding-top: 20px;
+  }
+
+  #introduction header {
+    display: block;
+  }
+  #introduction img {
+    display: block;
+    margin: 0px auto 20px auto;
+  }
+
+  #introduction h1 {
+    margin-top: 100px;
+    line-height: 38px;
+    font-size: 31px;
+  }
+
+  #introduction h2 {
+    font-size: 16px;
+  }
+
+  #introduction ul {
+    text-align: center;
+  }
+
+  #introduction #actions a {
+    padding: 0px 45px;
+    font-size: 16px;
+    width: 90%;
+    margin-bottom: 10px;
+  }
+  #everything-list p {
+    width: 430px;
+  }
+
+  #feature-list {
+    padding-top: 30px;
+  }
+
+  #feature {
+    padding-bottom: 55px;
+  }
+
+  #stable {
+    padding-top: 18px;
+    padding-bottom: 10px;
+  }
+
+  #availableContent > div > div {
+    max-width: 100%;
+  }
+
+  #availableContent > div > div > h2 {
+    padding-top: 0px;
+    padding-left: 0px;
+  }
 }
